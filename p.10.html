@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Práctica 10. Display & Position</title>
+  <style>
+
+    div.p10 {
+      background: yellow;
+      height: 75vh;
+      width: 75vw;
+      margin: auto;
+      position: relative;
+
+    }
+
+    div.p10a {
+      background-color: rgb(185, 66, 215);
+      width: 50%;
+      height: 50%;
+      position: absolute;
+      top:0;
+      left:0;
+    }
+
+    div.p10b {
+      background-color: rgb(117, 242, 65);
+      width: 50%;
+      height: 50%;
+      position: absolute;
+      top:0;
+      right:0;
+    }
+
+    div.p10b img {
+      display: block;
+      margin: auto;
+    }
+
+    div.p10c {
+      background-color: rgb(65, 249, 255);
+      width: 50%;
+      height: 50%;
+      position: absolute;
+      bottom: 0;
+      left:0;
+    }
+
+    div.p10c li {
+      display: inline-block;
+      background-color: white;
+      padding: 1em;
+    }
+
+    div.p10c li a {
+      color: black;
+      text-transform: uppercase;
+      font-family: sans-serif;
+      text-decoration: none;
+    }
+
+    div.p10c li:hover {
+      background-color: rgb(105, 240, 116);
+    }
+
+    div.p10d {
+      background-color: rgb(254, 30, 30);
+      width: 50%;
+      height: 50%;
+      position: absolute;
+      bottom: 0;
+      right:0;
+    }
+
+
+
+  </style>
+</head>
+<body>
+
+
+
+  <div class="grid-layout">
+    <header>
+      <h1>Practicas HTML/CSS 2020</h1>
+      <p class="header__left-side"><strong>Natalia Ramallo Campos</strong></p>
+      <p class="header__right-side"><strong>4ºB</strong></p>
+    </header>
+    <nav>
+      <a href="p.1.html">Práctica 1</a>
+      <a href="p.2.html">Práctica 2</a>
+      <a href="p.3.html">Práctica 3</a>
+      <a href="p.4.html">Práctica 4</a>
+      <a href="p.5.html">Práctica 5</a>
+      <a href="p.6.html">Práctica 6</a>
+      <a href="p.7.html">Práctica 7</a>
+      <a href="p.8.html">Práctica 8</a>
+      <a href="p.9.html">Práctica 9</a>
+      <a href="p.10.html">Práctica 10</a>
+      <a href="p.11.html">Práctica 11</a>
+      <a href="p.12a.html">Práctica 12a</a>
+      <a href="p.12b.html">Práctica 12b</a>
+      <a href="p.12d.html">Práctica 12d</a>
+      <a href="p.13.html">Práctica 13</a>
+      <a href="p.14.html">Práctica 14</a>
+    </nav>
+
+    <div class="main">
+      <h1>Práctica 10. Display & Position</h1>
+
+      <div class="p10">
+    	  <div class="p10a">
+          <h2>1. Inline Images</h2>
+          <img src="https://unsplash.it/75/75" alt="">
+          <img src="https://unsplash.it/75/75" alt="">
+          <img src="https://unsplash.it/75/75" alt="">
+
+        </div>
+    	  <div class="p10b">
+          <h2>2. Block Images</h2>
+          <img src="https://unsplash.it/75/50" alt="">
+          <img src="https://unsplash.it/75/50" alt="">
+          <img src="https://unsplash.it/75/50" alt="">
+
+        </div>
+    	  <div class="p10c">
+          <h2>3. Inline List</h2>
+          <ul>
+            <li><a href="">Menu 1</a></li>
+            <li><a href="">Menu 2</a></li>
+            <li><a href="">Menu 3</a></li>
+            <li><a href="">Menu 4</a></li>
+          </ul>
+        </div>
+    	  <div class="p10d">
+          <h2>4. Vacío</h2>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+</body>
+</html>

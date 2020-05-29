@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href=" https://fonts.googleapis.com/css?family=Mr+Dafoe">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Práctica 14. Icono, máscara y marcapáginas</title>
+  <style>
+    body {
+      color: #FFFFFB;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 30vh 0;
+    }
+
+    .one {
+      background: #FFC145;
+    }
+
+    .one__icon {
+      font-size: 2em;
+      width: 100px;
+      height: 100px;
+      background: rgba(0,0,0,.3);
+      color: rgba(0,0,0,.3);
+      margin: 0 auto;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+    }
+
+    .two {
+      background: #FF6B6C;
+    }
+
+    .two__image {
+      clip-path: polygon(50% 0%, 65% 29%, 100% 35%, 80% 59%, 84% 91%, 51% 75%, 17% 90%, 18% 57%, 0% 35%, 34% 29%)
+    }
+
+    .three {
+      background: #5B5F97;
+    }
+
+    .box{
+      font-family: 'Mr Dafoe';
+      font-size:  1.2em;
+      font-weight: normal;
+      background-color: #FFF;
+      color: #BBB;
+      padding: 10px;
+      border-radius: 7px;
+      width: 75%;
+      margin: 0 auto;
+      position: relative;
+
+    }
+
+    .ribbon {
+      width: 0px;
+      height: 35px;
+      border: 15px solid #B13A22;
+      border-bottom: 15px solid transparent;
+      border-top-right-radius: 5px;
+      border-top-left-radius: 5px;
+      position: absolute;
+      top: -5px;
+      right: 5%;
+    }
+
+    .ribbon:hover {
+      transform: scaleY(1.5);
+      transform-origin: top;
+      transition: transform 0.2s;
+    }
+
+
+  </style>
+</head>
+<body>
+
+
+  <div class="grid-layout">
+    <header>
+      <h1>Practicas HTML/CSS 2020</h1>
+      <p class="header__left-side"><strong>Natalia Ramallo Campos</strong></p>
+      <p class="header__right-side"><strong>4ºB</strong></p>
+    </header>
+    <nav>
+      <a href="p.1.html">Práctica 1</a>
+      <a href="p.2.html">Práctica 2</a>
+      <a href="p.3.html">Práctica 3</a>
+      <a href="p.4.html">Práctica 4</a>
+      <a href="p.5.html">Práctica 5</a>
+      <a href="p.6.html">Práctica 6</a>
+      <a href="p.7.html">Práctica 7</a>
+      <a href="p.8.html">Práctica 8</a>
+      <a href="p.9.html">Práctica 9</a>
+      <a href="p.10.html">Práctica 10</a>
+      <a href="p.11.html">Práctica 11</a>
+      <a href="p.12a.html">Práctica 12a</a>
+      <a href="p.12b.html">Práctica 12b</a>
+      <a href="p.12d.html">Práctica 12d</a>
+      <a href="p.13.html">Práctica 13</a>
+      <a href="p.14.html">Práctica 14</a>
+    </nav>
+
+    <div class="main">
+      <section class="one">
+        <h1>Icon</h1>
+        <div class="one__icon">:)</div>
+      </section>
+
+      <section class="two">
+        <h1>Clip images</h1>
+        <img class="two__image" src="https://www.fillmurray.com/300/500" alt="fillmurray">
+      </section>
+
+      <section class="three">
+        <h1>Bookmark</h1>
+        <div class="box">
+          <div class="ribbon"></div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, ea at, nostrum ipsa necessitatibus ullam aliquam ut labore eos incidunt dolorum est. Veniam similique, rerum unde rem explicabo eveniet exercitationem.</p>
+          <p>Sed eius, error, itaque neque harum quia aliquam natus exercitationem. Est mollitia officiis tenetur debitis eligendi, cupiditate numquam assumenda dolore a nostrum facilis. Rem, nesciunt dolorem similique suscipit mollitia! Dolorum?</p>
+          <p>Rem maxime, tempora asperiores, obcaecati quisquam harum nemo distinctio, mollitia repudiandae temporibus odio! Nostrum rerum ea saepe necessitatibus fuga neque ab ipsa? Voluptatem deleniti expedita minus aut cum fuga veniam.</p>
+        </div>
+      </section>
+    </div>
+
+  </div>
+
+
+
+
+
+</body>
+</html>

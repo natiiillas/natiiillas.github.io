@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href=" https://fonts.googleapis.com/css?family=Work+Sans:400,600
+">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Práctica 11. Barra de navegación</title>
+
+  <style>
+
+  body {
+    margin: 0;
+    font-family:  'Work Sans'. sans-serif;
+    font-weight: 400;
+    }
+    .content {
+      background-image: url(https://unsplash.it/1000/1000);
+      height: 200vh;
+      background-size: cover;
+      background-color: #333;
+      color: white;
+      background-blend-mode: multiply;
+      display: grid;
+      place-items: center;
+    }
+
+  header {
+    background: rgb(123, 148, 185);
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    z-index: 999;
+    display: grid;
+    grid-template-columns: 1fr auto minmax(600px,5fr) 1fr;
+  }
+
+  .logo {
+    grid-column: 2 / span 1;
+  }
+
+  nav {
+    grid-column: 3 / span 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  nav li {
+    margin-left: 3em;
+    margin-bottom: 0;
+  }
+
+  nav a {
+    color: rgb(97, 81, 198);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    position: relative;
+  }
+
+  nav a:hover {
+    color: #000;
+  }
+
+  nav a::before {
+    content:"";
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: rgb(97, 81, 198);
+    position: absolute;
+    top: -0.75em;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 260ms;
+  }
+
+  nav a:hover::before {
+    transform: scaleX(1);
+  }
+
+
+  </style>
+</head>
+<body>
+
+
+
+
+  <div class="grid-layout">
+    <header>
+      <h1>Practicas HTML/CSS 2020</h1>
+      <p class="header__left-side"><strong>Natalia Ramallo Campos</strong></p>
+      <p class="header__right-side"><strong>4ºB</strong></p>
+    </header>
+    <nav>
+      <a href="p.1.html">Práctica 1</a>
+      <a href="p.2.html">Práctica 2</a>
+      <a href="p.3.html">Práctica 3</a>
+      <a href="p.4.html">Práctica 4</a>
+      <a href="p.5.html">Práctica 5</a>
+      <a href="p.6.html">Práctica 6</a>
+      <a href="p.7.html">Práctica 7</a>
+      <a href="p.8.html">Práctica 8</a>
+      <a href="p.9.html">Práctica 9</a>
+      <a href="p.10.html">Práctica 10</a>
+      <a href="p.11.html">Práctica 11</a>
+      <a href="p.12a.html">Práctica 12a</a>
+      <a href="p.12b.html">Práctica 12b</a>
+      <a href="p.12d.html">Práctica 12d</a>
+      <a href="p.13.html">Práctica 13</a>
+      <a href="p.14.html">Práctica 14</a>
+    </nav>
+
+    <div class="main">
+      <header>
+    	<img class="logo" src="https://raw.githubusercontent.com/sorolla-eso/sorolla-eso.github.io/master/logo.png" width="64px" alt="">
+
+    	<nav>
+      	  <ul>
+        	    <li><a href="">Inicio</a></li>
+        	    <li><a href="">Asignaturas</a></li>
+        	    <li><a href="">Secretaria</a></li>
+        	    <li><a href="">Contacto</a></li>
+      	  </ul>
+    	</nav>
+      </header>
+      <div class="content">
+    	<h2>El contenido aquí...</h2>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+</body>
+</html>

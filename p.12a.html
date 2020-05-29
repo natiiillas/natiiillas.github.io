@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+
+    p>strong>em {
+      font-family: monospace;
+      font-size: 0.8em:
+    }
+
+    .g-common {
+
+      border: 1px solid black;
+      height: 200px;
+      display:grid;
+    }
+
+    .g-uno {
+      grid-template-columns: repeat(6, 1fr)
+    }
+
+    .i-red {
+      background: red;
+      grid-column: 2 / 3;
+    }
+
+    .i-yellow {
+      background: yellow;
+      grid-column: 3 / span 2;
+    }
+
+    .i-yellow:hover {
+      transform: scaleY(0);
+      transform-origin: top;
+      transition: ease-in-out 1000ms;
+    }
+
+    .i-purple {
+      background: purple;
+      grid-column: 6 / 7;
+    }
+
+    .g-dos {
+      grid-template-rows: 1fr 4fr 1fr 4fr 1fr;
+    }
+
+    .i-green {
+      background: green;
+      grid-row: 2 / span 1;
+    }
+
+    .i-blue {
+      background: blue;
+      grid-row: 4 / span 1;
+    }
+
+    .i-black {
+      background: black;
+      grid-row: 5 / span 1;
+    }
+
+
+
+
+  </style>
+</head>
+<body>
+
+
+
+
+
+  <div class="grid-layout">
+    <header>
+      <h1>Practicas HTML/CSS 2020</h1>
+      <p class="header__left-side"><strong>Natalia Ramallo Campos</strong></p>
+      <p class="header__right-side"><strong>4ºB</strong></p>
+    </header>
+    <nav>
+      <a href="p.1.html">Práctica 1</a>
+      <a href="p.2.html">Práctica 2</a>
+      <a href="p.3.html">Práctica 3</a>
+      <a href="p.4.html">Práctica 4</a>
+      <a href="p.5.html">Práctica 5</a>
+      <a href="p.6.html">Práctica 6</a>
+      <a href="p.7.html">Práctica 7</a>
+      <a href="p.8.html">Práctica 8</a>
+      <a href="p.9.html">Práctica 9</a>
+      <a href="p.10.html">Práctica 10</a>
+      <a href="p.11.html">Práctica 11</a>
+      <a href="p.12a.html">Práctica 12a</a>
+      <a href="p.12b.html">Práctica 12b</a>
+      <a href="p.12d.html">Práctica 12d</a>
+      <a href="p.13.html">Práctica 13</a>
+      <a href="p.14.html">Práctica 14</a>
+    </nav>
+
+    <div class="main">
+      <h1>Practica 12. Grid System</h1>
+      <p><strong>1. 6 columnas iguales:
+     	<em>"patron: repeat(6,1fr), roja:2, amarilla: 3 - 5, purple: 6"</em></strong></p>
+
+      <div class="g-common g-uno">
+    	<div class="i-red"></div>
+    	<div class="i-yellow"></div>
+    	<div class="i-purple"></div>
+      </div>
+
+      <p><strong>2. 5 filas :
+     	<em>"patron: 1fr 4fr 1fr 4fr 1fr, verde:2, azul: 4, negra: 5"</em></strong></p>
+      <div class="g-common g-dos">
+    	<div class="i-green"></div>
+    	<div class="i-blue"></div>
+    	<div class="i-black"></div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+
+</body>
+
+</html>

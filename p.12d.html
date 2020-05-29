@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mukta+Malar:300,700
+
+">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Práctica 12. Grid Layout</title>
+  <style>
+    body {
+      font-family: "Mukta Malar", sans-serif;
+    }
+
+    section {
+      padding: 4vh;
+      width: 80%;
+      margin: 0 auto;
+      margin-bottom: 3em;
+      box-shadow: 0px .5em 2em rgba(0,0,0,.3);
+    }
+
+    .card {
+      margin:1.5%;
+      text-align:  center;
+      width: 30%;
+      background-color: white;
+      border: 1px solid black;
+    }
+
+    .card img {
+      max-width: 100%;
+    }
+
+    .card p {
+      padding: .5em;
+      margin: 0;
+    }
+
+    .grid-layout-one .card {
+      width: 100%;
+    }
+
+    .grid-layout-one .grid-parent {
+      display: grid;
+      grid-template-columns: 1fr 1fr 2fr;
+      grid-gap:  1em;
+    }
+
+    .grid-layout-two {
+      display: grid;
+      grid-template-columns: 1fr 4fr 1fr;
+    }
+
+    .grid-layout-two .title {
+      grid-column: 1 / 4;
+    }
+
+    .grid-layout-two footer {
+      grid-column: 1 / 4;
+    }
+
+    .sidebar {
+      background-color: #4D7CBA;
+      color: white;
+      padding: 1em;
+    }
+
+    .main {
+      background: #E4FDE1;
+      color: #333;
+      padding: 1em;
+    }
+
+    .main .card {
+      float: left;
+    }
+
+    footer {
+      background: #476A6F;
+      color: white;
+      padding: 1em;
+    }
+
+
+
+
+  </style>
+</head>
+<body>
+
+
+
+  <div class="grid-layout">
+    <header>
+      <h1>Practicas HTML/CSS 2020</h1>
+      <p class="header__left-side"><strong>Natalia Ramallo Campos</strong></p>
+      <p class="header__right-side"><strong>4ºB</strong></p>
+    </header>
+    <nav>
+      <a href="p.1.html">Práctica 1</a>
+      <a href="p.2.html">Práctica 2</a>
+      <a href="p.3.html">Práctica 3</a>
+      <a href="p.4.html">Práctica 4</a>
+      <a href="p.5.html">Práctica 5</a>
+      <a href="p.6.html">Práctica 6</a>
+      <a href="p.7.html">Práctica 7</a>
+      <a href="p.8.html">Práctica 8</a>
+      <a href="p.9.html">Práctica 9</a>
+      <a href="p.10.html">Práctica 10</a>
+      <a href="p.11.html">Práctica 11</a>
+      <a href="p.12a.html">Práctica 12a</a>
+      <a href="p.12b.html">Práctica 12b</a>
+      <a href="p.12d.html">Práctica 12d</a>
+      <a href="p.13.html">Práctica 13</a>
+      <a href="p.14.html">Práctica 14</a>
+    </nav>
+
+    <div class="main">
+      <section class="grid-layout-one">
+        <h1>Using CSS Grid</h1>
+        <div class="grid-parent">
+          <div class="card">
+            <img src="https://unsplash.it/300/200" alt="a placeholder">
+            <p>Oh, this little droid! I think he's searching for his former master...</p>
+          </div>
+          <div class="card">
+            <img src="https://unsplash.it/300/200" alt="a placeholder">
+            <p>Oh, this little droid! I think he's searching for his former master...</p>
+          </div>
+          <div class="card">
+            <img src="https://unsplash.it/300/200" alt="a placeholder">
+            <p>Oh, this little droid! I think he's searching for his former master...</p>
+          </div>
+          <div class="card">
+            <img src="https://unsplash.it/300/200" alt="a placeholder">
+            <p>Oh, this little droid! I think he's searching for his former master...</p>
+          </div>
+          <div class="card">
+            <img src="https://unsplash.it/300/200" alt="a placeholder">
+            <p>Oh, this little droid! I think he's searching for his former master...</p>
+          </div>
+          <div class="card">
+            <img src="https://unsplash.it/300/200" alt="a placeholder">
+            <p>Oh, this little droid! I think he's searching for his former master...</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="grid-layout-two">
+        <h1 class="title">More Grid for layout</h1>
+        <div class="sidebar sidebar--left">
+          <p>Hello there! Come here my little friend. Don't be afraid. Don't worry, he'll be all right. What happened? Rest easy, son, you've had a busy day. You're fortunate you're still in one piece. Ben? Ben Kenobi! Boy, am I glad to see you! </p>
+        </div>
+        <div class="main">
+          <div class="card">
+            <img src="https://unsplash.it/300/200" alt="a placeholder">
+            <p>Oh, this little droid! I think he's searching for his former master...</p>
+          </div>
+          <p>I'm getting too old for this sort of thing. I can't get involved! I've got work to do! It's not that I like the Empire. I hate it! But there's nothing I can do about it right now. It's such a long way from here. That's your uncle talking.
+            Oh, God, my uncle. How am I ever going to explain this?I've never seen such devotion in a droid before...there seems to be no stopping him. He claims to be the property of an Obi-Wan Kenobi. Is he a relative of yours? Do you know who he's
+            talking about?</p>
+        </div>
+        <div class="sidebar sidebar--right">
+          <p>Hello there! Come here my little friend. Don't be afraid. Don't worry, he'll be all right. What happened? Rest easy, son, you've had a busy day. You're fortunate you're still in one piece. Ben? Ben Kenobi! Boy, am I glad to see you! </p>
+        </div>
+        <footer>
+          <p>But there's nothing I can do about it right now. It's such a long way from here. That's your uncle talking. </p>
+        </footer>
+      </section>
+    </div>
+
+  </div>
+
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Práctica 12b. Portfolio</title>
+  <style>
+
+    body {
+      background: #353535;
+      color: #c4c4c4;
+      font-size: 1.2em;
+    }
+
+    .portfolio {
+      display: grid;
+      grid-template-rows: repeat(8, 1fr);
+      grid-template-columns: repeat(5, 1fr);
+      grid-gap: 20px;
+    }
+
+    .portfolio-item {
+      background: #f96855;
+      font-size: 1.2em;
+      font-weight: 700;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .large {
+      grid-column: span 3;
+      grid-row: span 3;
+    }
+
+    .tall {
+      grid-row: span 3;
+      grid-column: span 2;
+    }
+
+    .wide {
+      grid-row: span 2;
+      grid-column: span 3;
+    }
+
+    .small {
+      grid-row: span 1;
+      grid-column: span 1;
+    }
+
+    .medium {
+      grid-row: span 2;
+      grid-column: span 2;
+    }
+
+  </style>
+</head>
+
+<body>
+
+
+
+  <div class="grid-layout">
+    <header>
+      <h1>Practicas HTML/CSS 2020</h1>
+      <p class="header__left-side"><strong>Natalia Ramallo Campos</strong></p>
+      <p class="header__right-side"><strong>4ºB</strong></p>
+    </header>
+    <nav>
+      <a href="p.1.html">Práctica 1</a>
+      <a href="p.2.html">Práctica 2</a>
+      <a href="p.3.html">Práctica 3</a>
+      <a href="p.4.html">Práctica 4</a>
+      <a href="p.5.html">Práctica 5</a>
+      <a href="p.6.html">Práctica 6</a>
+      <a href="p.7.html">Práctica 7</a>
+      <a href="p.8.html">Práctica 8</a>
+      <a href="p.9.html">Práctica 9</a>
+      <a href="p.10.html">Práctica 10</a>
+      <a href="p.11.html">Práctica 11</a>
+      <a href="p.12a.html">Práctica 12a</a>
+      <a href="p.12b.html">Práctica 12b</a>
+      <a href="p.12d.html">Práctica 12d</a>
+      <a href="p.13.html">Práctica 13</a>
+      <a href="p.14.html">Práctica 14</a>
+    </nav>
+
+    <div class="main">
+      <div class="portfolio">
+        <div class="portfolio-item medium">medio</div>
+        <div class="portfolio-item large">grande</div>
+        <div class="portfolio-item medium">medio</div>
+     	  <div class="portfolio-item small">pequeño</div>
+        <div class="portfolio-item tall">alto</div>
+        <div class="portfolio-item wide">ancho</div>
+        <div class="portfolio-item wide">ancho</div>
+        <div class="portfolio-item medium">medio</div>
+    	</div>
+    </div>
+
+  </div>
+
+
+
+
+
+</body>
+
+</html>
